@@ -1,0 +1,44 @@
+---
+const groups = [
+  {
+    title: "Core / Backend",
+    skills: ["Node.js", "TypeScript", "REST APIs", "Express", "Microservices"],
+  },
+  {
+    title: "Interface / Frontend",
+    skills: ["Astro", "React", "Next.js", "Tailwind CSS", "State Management"],
+  },
+  {
+    title: "Data / Infrastructure",
+    skills: ["PostgreSQL", "Supabase", "Git / GitHub", "Docker", "CI/CD"],
+  },
+]
+---
+
+<section class="flex min-h-screen w-full snap-start flex-col justify-center px-8 py-32">
+  <div class="mx-auto max-w-6xl">
+    <div class="mb-24 space-y-4">
+      <p class="text-3xl font-black uppercase md:text-5xl">Stack <span class="text-lavender">Architecture</span></p>
+    </div>
+
+    <div class="border-carbon-light grid grid-cols-1 border md:grid-cols-3">
+      {
+        groups.map((group) => (
+          <div class="border-carbon-light group space-y-8 border-b p-10 transition-colors last:border-r-0 last:border-b-0 hover:bg-white/5 md:border-r md:border-b-0">
+            <h3 class="text-lavender text-sm font-black tracking-[0.3em] uppercase opacity-80 transition-opacity group-hover:opacity-100">
+              {group.title}
+            </h3>
+            <ul class="space-y-4">
+              {group.skills.map((skill) => (
+                <li class="flex items-center gap-3 text-sm font-light tracking-wide text-gray-400 transition-colors group-hover:text-gray-200">
+                  <span class="bg-carbon-light group-hover:bg-lavender h-px w-3 transition-all" />
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

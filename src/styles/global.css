@@ -25,6 +25,20 @@
   h6 {
     @apply font-bold tracking-tight;
   }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-carbon-deep);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-carbon-light);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-lavender);
+  }
 }
 
 @layer utilities {

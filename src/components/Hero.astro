@@ -1,0 +1,50 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const name = "Jose"
+---
+
+<section class="flex min-h-screen snap-start flex-col items-center justify-center p-8 text-center md:p-24">
+  <div class="space-y-6">
+    <h1 class="text-5xl font-black tracking-tighter uppercase md:text-7xl">
+      {t("hero.greeting")}
+      <span class="text-lavender">{name}</span>!
+    </h1>
+
+    <p class="mx-auto max-w-xl text-lg leading-relaxed font-light text-gray-400 md:text-xl">
+      {t("hero.description")}
+    </p>
+
+    <div class="flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
+      <a
+        href="#projects"
+        class="border-lavender text-lavender hover:bg-lavender hover:text-carbon-deep w-full border bg-transparent px-8 py-3 text-sm font-bold tracking-widest uppercase transition-all duration-300 sm:w-auto"
+      >
+        {t("hero.viewProjects")}
+      </a>
+      <a
+        href="#contact"
+        class="border-carbon-light w-full border px-8 py-3 text-sm font-bold tracking-widest text-gray-400 uppercase transition-all duration-300 hover:border-white hover:text-white sm:w-auto"
+      >
+        {t("hero.contactMe")}
+      </a>
+    </div>
+  </div>
+
+  <div class="border-carbon-light mt-24 grid w-full max-w-4xl grid-cols-1 gap-8 border-t pt-12 md:grid-cols-3">
+    <div class="space-y-2 text-left">
+      <h3 class="text-lavender text-xs font-black tracking-[0.2em] uppercase">{t("info.experience")}</h3>
+      <p class="text-sm text-gray-500">{t("info.expValue")}</p>
+    </div>
+    <div class="space-y-2 text-left">
+      <h3 class="text-lavender text-xs font-black tracking-[0.2em] uppercase">{t("info.location")}</h3>
+      <p class="text-sm text-gray-500">{t("info.locValue")}</p>
+    </div>
+    <div class="space-y-2 text-left">
+      <h3 class="text-lavender text-xs font-black tracking-[0.2em] uppercase">{t("info.focus")}</h3>
+      <p class="text-sm text-gray-500">{t("info.focusValue")}</p>
+    </div>
+  </div>
+</section>

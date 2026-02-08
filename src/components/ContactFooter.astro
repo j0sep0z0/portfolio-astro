@@ -1,0 +1,100 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const currentYear = new Date().getFullYear()
+
+const contact = {
+  name: "Jose Pozo",
+  username: "j0sep0z0",
+  email: "josepozovilalta@gmail.com",
+  linkedin: "https://www.linkedin.com/in/j0sep0z0/",
+  github: "https://github.com/j0sep0z0",
+  location: t("info.locValue"),
+}
+
+// Technical Signature (Universal - Always English)
+const signature = {
+  initials: "JP",
+  motto: "Idea // Creativity // Experience",
+  copyright: "Jose Pozo // Clean Code & Scalable Design",
+  engineering: "Astro 5.0 // Creative Engineering",
+}
+---
+
+<footer
+  id="contact"
+  class="border-carbon-light flex min-h-screen w-full snap-start flex-col justify-center border-t px-8 py-24"
+>
+  <div class="mx-auto max-w-6xl">
+    <div class="mb-24 grid grid-cols-1 gap-16 md:grid-cols-2">
+      <div class="space-y-8">
+        <h2 class="text-3xl font-black tracking-tighter uppercase md:text-5xl" set:html={t("contact.cta")} />
+        <p class="max-w-md leading-relaxed font-light text-gray-500">
+          {t("contact.description")}
+        </p>
+      </div>
+
+      <div class="flex flex-col justify-end space-y-6">
+        <a
+          href={`mailto:${contact.email}`}
+          class="group border-carbon-light hover:border-lavender flex items-center justify-between border-b py-4 transition-colors"
+        >
+          <span class="text-xs font-black tracking-widest text-gray-400 uppercase group-hover:text-white"
+            >{t("contact.email")}</span
+          >
+          <span class="group-hover:text-lavender text-lg font-light tracking-tight transition-colors"
+            >{contact.email}</span
+          >
+        </a>
+        <a
+          href={contact.linkedin}
+          target="_blank"
+          class="group border-carbon-light hover:border-lavender flex items-center justify-between border-b py-4 transition-colors"
+        >
+          <span class="text-xs font-black tracking-widest text-gray-400 uppercase group-hover:text-white"
+            >{t("contact.linkedin")}</span
+          >
+          <span class="group-hover:text-lavender text-lg font-light tracking-tight transition-colors"
+            >{contact.name}</span
+          >
+        </a>
+        <a
+          href={contact.github}
+          target="_blank"
+          class="group border-carbon-light hover:border-lavender flex items-center justify-between border-b py-4 transition-colors"
+        >
+          <span class="text-xs font-black tracking-widest text-gray-400 uppercase group-hover:text-white"
+            >{t("contact.github")}</span
+          >
+          <span class="group-hover:text-lavender text-lg font-light tracking-tight transition-colors"
+            >{contact.username}</span
+          >
+        </a>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center justify-between gap-8 border-t border-white/5 pt-12 md:flex-row">
+      <div class="flex items-center gap-4">
+        <div class="bg-lavender text-carbon flex h-8 w-8 items-center justify-center text-xs font-black">
+          {signature.initials}
+        </div>
+        <div class="space-y-1">
+          <p class="text-[10px] font-black tracking-[0.4em] text-gray-400 uppercase">
+            {contact.location}
+          </p>
+          <p class="text-[10px] font-bold tracking-widest text-gray-600 uppercase">
+            © {currentYear}
+            {signature.copyright}
+          </p>
+        </div>
+      </div>
+
+      <div class="flex gap-12">
+        <span class="text-[9px] font-black tracking-widest text-gray-500 uppercase">{signature.motto}</span>
+        <span class="text-[9px] font-black tracking-widest text-gray-500 uppercase">{signature.engineering}</span>
+      </div>
+    </div>
+  </div>
+</footer>

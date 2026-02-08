@@ -1,0 +1,70 @@
+---
+const experiences = [
+  {
+    date: "2023 — Present",
+    title: "Full Stack Developer",
+    company: "Tech Solutions Inc.",
+    description:
+      "Developing scalable web applications and architectural blueprints. Focused on React and Node.js ecosystems.",
+    current: true,
+  },
+  {
+    date: "2022 — 2023",
+    title: "Junior Web Developer",
+    company: "Digital Studio",
+    description:
+      "Built responsive interfaces and integrated RESTful APIs. Transitioned from previous career to professional software development.",
+    current: false,
+  },
+  {
+    date: "2010 — 2022",
+    title: "Senior Professional / Project Manager",
+    company: "Previous Sector",
+    description:
+      "Managed complex projects and cross-functional teams. Gained expertise in problem-solving and operational architecture, now applied to software engineering.",
+    current: false,
+  },
+]
+---
+
+<section class="bg-carbon-deep flex min-h-screen w-full snap-start flex-col justify-center px-8 py-32">
+  <div class="mx-auto max-w-4xl">
+    <div class="mb-24 space-y-4">
+      <p class="text-3xl font-black uppercase md:text-5xl">Structural <span class="text-lavender">Evolution</span></p>
+    </div>
+
+    <div
+      class="before:from-lavender before:via-carbon-light before:to-carbon-light relative space-y-12 before:absolute before:inset-0 before:ml-5 before:-translate-x-px before:bg-linear-to-b md:before:mx-auto md:before:translate-x-0"
+    >
+      {
+        experiences.map((exp) => (
+          <div class="group relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse">
+            {/* Dot */}
+            <div
+              class={[
+                "border-carbon-deep absolute left-5 h-2 w-2 -translate-x-1/2 rounded-full border ring-4 transition-all duration-500 md:left-1/2 md:-ml-px",
+                exp.current
+                  ? "bg-lavender ring-lavender/20"
+                  : "bg-carbon-light group-hover:bg-lavender group-hover:ring-lavender/10 ring-transparent",
+              ].join(" ")}
+            />
+
+            <div
+              class={[
+                "border-carbon-light w-[calc(100%-4rem)] border p-6 transition-all duration-500 md:w-[calc(50%-2.5rem)]",
+                exp.current ? "border-lavender/40 bg-lavender/5" : "hover:border-lavender/20 group-hover:bg-white/5",
+              ].join(" ")}
+            >
+              <div class="mb-1 flex items-center justify-between space-x-2">
+                <time class="text-lavender text-[10px] font-black tracking-widest uppercase">{exp.date}</time>
+              </div>
+              <h3 class="text-lg font-black tracking-tight text-white uppercase">{exp.title}</h3>
+              <p class="mb-4 text-xs font-bold tracking-widest text-gray-500 uppercase">{exp.company}</p>
+              <p class="text-sm leading-relaxed font-light text-gray-400">{exp.description}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

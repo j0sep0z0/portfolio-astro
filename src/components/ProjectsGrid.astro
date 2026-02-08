@@ -1,0 +1,82 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+const projects = [
+  // ... (omitting projects for brevity in replacement, but keeping them)
+  // Wait, I should probably keep the projects array in the replacement content.
+  {
+    title: "EcoSmart Infrastructure",
+    category: "Full Stack / IoT",
+    description: "Real-time monitoring system for industrial energy consumption.",
+    tags: ["React", "Node.js", "PostgreSQL", "MQTT"],
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "Architecture Dashboard",
+    category: "Data Visualization",
+    description: "Technical dashboard for structural engineering calculations.",
+    tags: ["Astro", "D3.js", "Tailwind"],
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "Project Management Tool",
+    category: "SaaS",
+    description: "Minimalist task orchestrator for creative agencies.",
+    tags: ["Next.js", "Supabase", "TypeScript"],
+    image: "https://images.unsplash.com/photo-1507537243993-c36f122c1d2d?auto=format&fit=crop&q=80&w=800",
+  },
+]
+---
+
+<section id="projects" class="bg-carbon-deep flex min-h-screen w-full snap-start flex-col justify-center px-8 py-32">
+  <div class="mx-auto max-w-6xl">
+    <div class="mb-24 flex items-end justify-between">
+      <div class="space-y-4">
+        <p class="text-3xl font-black uppercase md:text-5xl">
+          Engineering <br />
+          <span class="text-lavender">Specimens</span>
+        </p>
+      </div>
+      <div class="hidden text-right md:block">
+        <p class="text-[10px] font-black tracking-widest text-gray-600 uppercase">Total Build: {projects.length}</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+      {
+        projects.map((project) => (
+          <div class="group border-carbon-light hover:border-lavender relative flex flex-col border p-6 transition-all duration-500">
+            <div class="bg-carbon border-carbon-light relative mb-6 aspect-video overflow-hidden border">
+              <img
+                src={project.image}
+                alt={project.title}
+                class="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+              />
+              <div class="bg-lavender absolute inset-0 opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-20" />
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-start justify-between">
+                <span class="text-lavender text-[10px] font-black tracking-widest uppercase">{project.category}</span>
+                <div class="bg-carbon-light group-hover:bg-lavender h-2 w-2 rounded-full transition-colors" />
+              </div>
+              <h3 class="text-xl font-black tracking-tight uppercase">{project.title}</h3>
+              <p class="line-clamp-2 text-sm text-gray-400">{project.description}</p>
+
+              <div class="flex flex-wrap gap-2 pt-4">
+                {project.tags.map((tag) => (
+                  <span class="border-carbon-light group-hover:border-lavender/30 border px-2 py-1 text-[9px] font-bold tracking-widest text-gray-500 uppercase group-hover:text-gray-300">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
