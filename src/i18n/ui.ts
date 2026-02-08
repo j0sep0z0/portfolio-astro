@@ -26,9 +26,8 @@ export const ui = {
       "I believe in continuous improvement. I strive to write code that is efficient, readable, and scalable, always looking for the best solution for each challenge.",
     "philosophy.subtext": "Building robust, maintainable applications. Prioritizing performance and modular design.",
 
-    "projects.title": "Engineering",
-    "projects.accent": "Specimens",
-    "projects.total": "Total Build",
+    "projects.title": "Featured",
+    "projects.accent": "Projects",
 
     "tech.title": "Technical",
     "tech.accent": "Stack",
@@ -56,18 +55,20 @@ export const ui = {
     "journey.gopass.date": "Sep 2024 — Nov 2024",
 
     "projects.rkive.title": "Rkive AI",
-    "projects.rkive.category": "AI / Mobile & Web",
-    "projects.rkive.desc": "Multimedia content automation with AI logic. Mobile and web architecture.",
+    "projects.rkive.category": "Generative AI / Media Tech",
+    "projects.rkive.desc": "Automated content engine. Orchestrating AI workflows for video editing and social growth.",
     "projects.rkive.alt": "Rkive AI Interface",
 
     "projects.reffindr.title": "Reffindr",
-    "projects.reffindr.category": "Real Estate Platform",
-    "projects.reffindr.desc": "Connecting tenants and landlords. Efficient full-stack rental logic.",
+    "projects.reffindr.category": "PropTech Platform",
+    "projects.reffindr.desc":
+      "Real estate marketplace engineering. Streamlining the rental lifecycle with intelligent matching.",
     "projects.reffindr.alt": "Reffindr Dashboard",
 
     "projects.gopass.title": "GoPass",
-    "projects.gopass.category": "Security / Fintech",
-    "projects.gopass.desc": "Secure ticketing with anti-fraud verification. Robust frontend protection.",
+    "projects.gopass.category": "Fintech & Security",
+    "projects.gopass.desc":
+      "Secure ticketing ecosystem. Implementing anti-fraud validation protocols and real-time verification.",
     "projects.gopass.alt": "GoPass Scanning System",
 
     "contact.title": "Connection",
@@ -99,9 +100,8 @@ export const ui = {
     "philosophy.subtext":
       "Construyendo aplicaciones robustas y mantenibles. Priorizando el rendimiento y el diseño modular.",
 
-    "projects.title": "Proyectos de",
-    "projects.accent": "Ingeniería",
-    "projects.total": "Total Construidos",
+    "projects.title": "Proyectos",
+    "projects.accent": "Destacados",
 
     "tech.title": "Stack",
     "tech.accent": "Técnico",
@@ -129,18 +129,21 @@ export const ui = {
     "journey.gopass.date": "Sep 2024 — Nov 2024",
 
     "projects.rkive.title": "Rkive AI",
-    "projects.rkive.category": "IA / Móvil y Web",
-    "projects.rkive.desc": "Automatización de contenido multimedia con lógica de IA. Arquitectura web y móvil.",
+    "projects.rkive.category": "IA Generativa / Media Tech",
+    "projects.rkive.desc":
+      "Motor de creación de contenido automatizado. Orquestación de flujos de IA para edición de vídeo y crecimiento social.",
     "projects.rkive.alt": "Interfaz Rkive AI",
 
     "projects.reffindr.title": "Reffindr",
-    "projects.reffindr.category": "Plataforma Inmobiliaria",
-    "projects.reffindr.desc": "Conectando inquilinos y propietarios. Lógica full-stack eficiente para alquileres.",
+    "projects.reffindr.category": "Plataforma PropTech",
+    "projects.reffindr.desc":
+      "Ingeniería de marketplace inmobiliario. Optimizando el ciclo de vida del alquiler con emparejamiento inteligente.",
     "projects.reffindr.alt": "Panel de Reffindr",
 
     "projects.gopass.title": "GoPass",
-    "projects.gopass.category": "Seguridad / Fintech",
-    "projects.gopass.desc": "Entradas seguras con verificación anti-fraude. Protección robusta en frontend.",
+    "projects.gopass.category": "Fintech y Seguridad",
+    "projects.gopass.desc":
+      "Ecosistema de ticketing seguro. Implementación de protocolos de validación anti-fraude y verificación en tiempo real.",
     "projects.gopass.alt": "Sistema de escaneo GoPass",
 
     "contact.title": "Conexión",
