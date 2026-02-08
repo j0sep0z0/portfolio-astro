@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro"
+import LangSwitcher from "./LangSwitcher.astro"
+import { getLangFromUrl, useTranslations } from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const name = "Jose"
+---
+
+<Layout title={t("hero.description")}>
+  <LangSwitcher />
+  <main class="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center p-8 text-center md:p-24">
+    <div class="space-y-6">
+      <h1 class="text-5xl font-black tracking-tighter uppercase md:text-7xl">
+        {t("hero.greeting")}
+        <span class="text-lavender">{name}</span>!
+      </h1>
+      
+      <p class="mx-auto max-w-xl text-lg leading-relaxed font-light text-gray-400 md:text-xl">
+        {t("hero.description")}
+      </p>
+
+      <div class="flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
+        <a
+          href="#projects"
+          class="border-lavender text-lavender hover:bg-lavender hover:text-carbon-deep w-full border bg-transparent px-8 py-3 text-sm font-bold tracking-widest uppercase transition-all duration-300 sm:w-auto"
+        >
+          {t("hero.viewProjects")}
+        </a>
+        <a
+          href="#contact"
+          class="border-carbon-light w-full border px-8 py-3 text-sm font-bold tracking-widest text-gray-400 uppercase transition-all duration-300 hover:border-white hover:text-white sm:w-auto"
+        >
+          {t("hero.contactMe")}
+        </a>
+      </div>
+    </div>
+    
+    <div class="mt-24 w-full max-w-4xl border-t border-carbon-light pt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="text-left space-y-2">
+        <h3 class="text-xs font-black uppercase tracking-[0.2em] text-lavender">{t("info.experience")}</h3>
+        <p class="text-sm text-gray-500">{t("info.expValue")}</p>
+      </div>
+      <div class="text-left space-y-2">
+        <h3 class="text-xs font-black uppercase tracking-[0.2em] text-lavender">{t("info.location")}</h3>
+        <p class="text-sm text-gray-500">{t("info.locValue")}</p>
+      </div>
+      <div class="text-left space-y-2">
+        <h3 class="text-xs font-black uppercase tracking-[0.2em] text-lavender">{t("info.focus")}</h3>
+        <p class="text-sm text-gray-500">{t("info.focusValue")}</p>
+      </div>
+    </div>
+  </main>
+</Layout>
