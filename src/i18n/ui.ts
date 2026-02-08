@@ -55,6 +55,21 @@ export const ui = {
       "Contributed to GoPass, a secure ticket platform. Implemented anti-fraud features and robust front-end architectures.",
     "journey.gopass.date": "Sep 2024 — Nov 2024",
 
+    "projects.rkive.title": "Rkive AI",
+    "projects.rkive.category": "AI / Mobile & Web",
+    "projects.rkive.desc": "Multimedia content automation with AI logic. Mobile and web architecture.",
+    "projects.rkive.alt": "Rkive AI Interface",
+
+    "projects.reffindr.title": "Reffindr",
+    "projects.reffindr.category": "Real Estate Platform",
+    "projects.reffindr.desc": "Connecting tenants and landlords. Efficient full-stack rental logic.",
+    "projects.reffindr.alt": "Reffindr Dashboard",
+
+    "projects.gopass.title": "GoPass",
+    "projects.gopass.category": "Security / Fintech",
+    "projects.gopass.desc": "Secure ticketing with anti-fraud verification. Robust frontend protection.",
+    "projects.gopass.alt": "GoPass Scanning System",
+
     "contact.title": "Connection",
     "contact.cta": 'From Idea to <br /> <span class="text-lavender">Experience</span>',
     "contact.description":
@@ -112,6 +127,21 @@ export const ui = {
     "journey.gopass.desc":
       "Contribución en GoPass, plataforma de tickets segura. Implementación de medidas anti-fraude y arquitecturas frontend robustas.",
     "journey.gopass.date": "Sep 2024 — Nov 2024",
+
+    "projects.rkive.title": "Rkive AI",
+    "projects.rkive.category": "IA / Móvil y Web",
+    "projects.rkive.desc": "Automatización de contenido multimedia con lógica de IA. Arquitectura web y móvil.",
+    "projects.rkive.alt": "Interfaz Rkive AI",
+
+    "projects.reffindr.title": "Reffindr",
+    "projects.reffindr.category": "Plataforma Inmobiliaria",
+    "projects.reffindr.desc": "Conectando inquilinos y propietarios. Lógica full-stack eficiente para alquileres.",
+    "projects.reffindr.alt": "Panel de Reffindr",
+
+    "projects.gopass.title": "GoPass",
+    "projects.gopass.category": "Seguridad / Fintech",
+    "projects.gopass.desc": "Entradas seguras con verificación anti-fraude. Protección robusta en frontend.",
+    "projects.gopass.alt": "Sistema de escaneo GoPass",
 
     "contact.title": "Conexión",
     "contact.cta": 'De la Idea a la <br /> <span class="text-lavender">Experiencia</span>',
