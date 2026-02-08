@@ -37,8 +37,23 @@ export const ui = {
     "tech.backend": "Backend Core",
     "tech.devops": "DevOps & Tools",
 
-    "journey.title": "Structural",
-    "journey.accent": "Evolution",
+    "journey.title": "Professional",
+    "journey.accent": "Journey",
+    "journey.rkive.role": "Full Stack Developer",
+    "journey.rkive.company": "Rkive AI",
+    "journey.rkive.desc":
+      "Developing and maintaining Rkive AI's mobile and web applications. Designing robust architectures and integrating AI-driven engines.",
+    "journey.rkive.date": "May 2025 — Present",
+    "journey.reffindr.role": "Full Stack Developer",
+    "journey.reffindr.company": "Igrowker (Reffindr)",
+    "journey.reffindr.desc":
+      "Key role in developing Reffindr, a renting platform. Connected tenants and simplified processes with efficient full-stack logic.",
+    "journey.reffindr.date": "Nov 2024 — Dec 2024",
+    "journey.gopass.role": "Front End Developer",
+    "journey.gopass.company": "Igrowker (GoPass)",
+    "journey.gopass.desc":
+      "Contributed to GoPass, a secure ticket platform. Implemented anti-fraud features and robust front-end architectures.",
+    "journey.gopass.date": "Sep 2024 — Nov 2024",
 
     "contact.title": "Connection",
     "contact.cta": 'From Idea to <br /> <span class="text-lavender">Experience</span>',
@@ -80,8 +95,23 @@ export const ui = {
     "tech.backend": "Núcleo Backend",
     "tech.devops": "DevOps y Herramientas",
 
-    "journey.title": "Evolución",
-    "journey.accent": "Estructural",
+    "journey.title": "Trayectoria",
+    "journey.accent": "Profesional",
+    "journey.rkive.role": "Full Stack Developer",
+    "journey.rkive.company": "Rkive AI",
+    "journey.rkive.desc":
+      "Desarrollando y manteniendo aplicaciones web y móviles para Rkive AI. Diseñando arquitecturas robustas e integrando motores de IA.",
+    "journey.rkive.date": "May 2025 — Presente",
+    "journey.reffindr.role": "Full Stack Developer",
+    "journey.reffindr.company": "Igrowker (Reffindr)",
+    "journey.reffindr.desc":
+      "Rol clave en el desarrollo de Reffindr. Conectando inquilinos y simplificando procesos con lógica full-stack eficiente.",
+    "journey.reffindr.date": "Nov 2024 — Dic 2024",
+    "journey.gopass.role": "Front End Developer",
+    "journey.gopass.company": "Igrowker (GoPass)",
+    "journey.gopass.desc":
+      "Contribución en GoPass, plataforma de tickets segura. Implementación de medidas anti-fraude y arquitecturas frontend robustas.",
+    "journey.gopass.date": "Sep 2024 — Nov 2024",
 
     "contact.title": "Conexión",
     "contact.cta": 'De la Idea a la <br /> <span class="text-lavender">Experiencia</span>',
