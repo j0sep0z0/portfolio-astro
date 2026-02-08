@@ -21,12 +21,10 @@ export const ui = {
     "info.locValue": "Barcelona, ES",
     "info.focus": "Focus",
     "info.focusValue": "Engineering Excellence",
-
-    "phi.title": "Technical Philosophy",
-    "phi.quote":
-      'Architecting <span class="text-lavender">scalable solutions</span> with the precision of industrial design. Code is not just logic; it\'s the infrastructure of the digital age.',
-    "phi.description":
-      "Focused on building robust, maintainable, and performance-driven applications through engineering excellence and modular thinking.",
+    "phi.title": "Technical Mindset",
+    "philosophy.content":
+      "I believe in continuous improvement. I strive to write code that is efficient, readable, and scalable, always looking for the best solution for each challenge.",
+    "philosophy.subtext": "Building robust, maintainable applications. Prioritizing performance and modular design.",
 
     "projects.title": "Engineering",
     "projects.accent": "Specimens",
@@ -65,12 +63,11 @@ export const ui = {
     "info.locValue": "Barcelona, ES",
     "info.focus": "Enfoque",
     "info.focusValue": "Excelencia en Ingeniería",
-
-    "phi.title": "Filosofía Técnica",
-    "phi.quote":
-      'Diseñando <span class="text-lavender">soluciones escalables</span> con la precisión del diseño industrial. El código no es solo lógica; es la infraestructura de la era digital.',
-    "phi.description":
-      "Enfocado en construir aplicaciones robustas, mantenibles y orientadas al rendimiento mediante la excelencia técnica y el pensamiento modular.",
+    "phi.title": "Mentalidad Técnica",
+    "philosophy.content":
+      "Creo en la mejora continua. Me esfuerzo por escribir código eficiente, legible y escalable, buscando siempre la mejor solución para cada reto.",
+    "philosophy.subtext":
+      "Construyendo aplicaciones robustas y mantenibles. Priorizando el rendimiento y el diseño modular.",
 
     "projects.title": "Proyectos de",
     "projects.accent": "Ingeniería",

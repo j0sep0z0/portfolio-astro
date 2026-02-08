@@ -1,23 +1,24 @@
 ---
+import { getLangFromUrl, useTranslations } from "../i18n/utils"
 
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section
   class="flex min-h-screen snap-start flex-col items-center justify-center px-8 py-32 text-center md:px-24 md:py-48"
 >
   <div class="mx-auto w-full max-w-screen-2xl space-y-12">
-    <h2 class="text-lavender text-xs font-black tracking-[0.4em] uppercase opacity-80">Technical Philosophy</h2>
+    <h2 class="text-lavender text-xs font-black tracking-[0.4em] uppercase opacity-80">{t("phi.title")}</h2>
 
     <blockquote class="text-2xl leading-relaxed font-light text-white md:text-4xl">
-      "Architecting <span class="text-lavender">scalable solutions</span> with the precision of industrial design. Code is
-      not just logic; it's the infrastructure of the digital age."
+      &ldquo;{t("philosophy.content")}&rdquo;
     </blockquote>
 
-    <div class="bg-carbon-light mx-auto h-px w-24"></div>
+    <div class="border-carbon-light mx-auto h-px w-24 border-t"></div>
 
     <p class="mx-auto max-w-2xl text-sm leading-relaxed tracking-wide text-gray-500 uppercase">
-      Focused on building robust, maintainable, and performance-driven applications through engineering excellence and
-      modular thinking.
+      {t("philosophy.subtext")}
     </p>
   </div>
 </section>

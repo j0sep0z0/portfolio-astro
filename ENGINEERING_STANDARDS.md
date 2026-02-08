@@ -4,13 +4,6 @@ This document defines the technical and aesthetic standards for the **Industrial
 
 ---
 
-## 0. Design Blueprint & Visual DNA
-
-This technical standard is the "How-To". For the "Look-And-Feel" (gradients, color usage, image filters), always refer to the:
-👉 **[UI_GUIDE.md](file:///c:/Users/j0sep/workspace/personal/portfolio-astro/UI_GUIDE.md)**
-
----
-
 ## 1. Component Architecture (Astro Official Standards)
 
 Astro components thrive on the **Separation of Concerns**. We strictly follow the "Server-First" mental model.
