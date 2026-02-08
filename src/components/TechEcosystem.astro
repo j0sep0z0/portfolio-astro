@@ -1,37 +1,51 @@
 ---
+import { getLangFromUrl, useTranslations } from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
 const groups = [
   {
-    title: "Core / Backend",
-    skills: ["Node.js", "TypeScript", "REST APIs", "Express", "Microservices"],
+    title: t("tech.frontend"),
+    skills: ["Astro", "React", "Next.js", "Expo", "Tailwind CSS"],
   },
   {
-    title: "Interface / Frontend",
-    skills: ["Astro", "React", "Next.js", "Tailwind CSS", "State Management"],
+    title: t("tech.logic"),
+    skills: ["TypeScript", "Redux Toolkit", "Zustand", "Zod"],
   },
   {
-    title: "Data / Infrastructure",
-    skills: ["PostgreSQL", "Supabase", "Git / GitHub", "Docker", "CI/CD"],
+    title: t("tech.backend"),
+    skills: ["Node.js", "Express.js", "MongoDB", "DynamoDB"],
+  },
+  {
+    title: t("tech.devops"),
+    skills: ["AWS", "Docker", "GitHub", "Vite", "Jest"],
   },
 ]
 ---
 
-<section class="flex min-h-screen w-full snap-start flex-col justify-center px-8 py-32">
-  <div class="mx-auto max-w-6xl">
+<section class="bg-carbon-deep flex min-h-screen w-full snap-start flex-col justify-center px-8 py-32 md:px-24">
+  <div class="mx-auto w-full max-w-screen-2xl">
     <div class="mb-24 space-y-4">
-      <p class="text-3xl font-black uppercase md:text-5xl">Stack <span class="text-lavender">Architecture</span></p>
+      <p class="text-3xl font-black uppercase md:text-5xl">
+        {t("tech.title")}
+        <span class="text-lavender">{t("tech.accent")}</span>
+      </p>
     </div>
 
-    <div class="border-carbon-light grid grid-cols-1 border md:grid-cols-3">
+    <div class="bg-carbon-light border-carbon-light grid grid-cols-2 gap-px border lg:grid-cols-4">
       {
         groups.map((group) => (
-          <div class="border-carbon-light group space-y-8 border-b p-10 transition-colors last:border-r-0 last:border-b-0 hover:bg-white/5 md:border-r md:border-b-0">
-            <h3 class="text-lavender text-sm font-black tracking-[0.3em] uppercase opacity-80 transition-opacity group-hover:opacity-100">
-              {group.title}
-            </h3>
+          <div class="bg-carbon-deep group space-y-5 p-8 transition-colors hover:bg-white/5">
+            <div class="flex min-h-10 items-start">
+              <h3 class="text-lavender text-xs font-black tracking-[0.2em] uppercase opacity-70 transition-opacity group-hover:opacity-100">
+                {group.title}
+              </h3>
+            </div>
             <ul class="space-y-4">
               {group.skills.map((skill) => (
                 <li class="flex items-center gap-3 text-sm font-light tracking-wide text-gray-400 transition-colors group-hover:text-gray-200">
-                  <span class="bg-carbon-light group-hover:bg-lavender h-px w-3 transition-all" />
+                  <div class="bg-lavender h-1.5 w-1.5 shrink-0 opacity-40 shadow-[0_0_8px_rgba(180,151,214,0.3)] transition-all group-hover:scale-110 group-hover:opacity-100" />
                   {skill}
                 </li>
               ))}
