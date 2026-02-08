@@ -7,6 +7,7 @@ export const defaultLang = "en"
 
 export const ui = {
   en: {
+    "nav.title": "Jose Pozo | Portfolio",
     "nav.home": "Home",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
@@ -80,6 +81,7 @@ export const ui = {
     "contact.github": "GitHub",
   },
   es: {
+    "nav.title": "Jose Pozo | Portfolio",
     "nav.home": "Inicio",
     "nav.projects": "Proyectos",
     "nav.contact": "Contacto",
