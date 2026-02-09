@@ -21,7 +21,7 @@ export const ui = {
     "info.location": "Location",
     "info.locValue": "Barcelona, ES",
     "info.focus": "Focus",
-    "info.focusValue": "Engineering Excellence",
+    "info.focusValue": "Digital Creativity",
     "phi.title": "Technical Mindset",
     "philosophy.content":
       "I believe in continuous improvement. I strive to write code that is efficient, readable, and scalable, always looking for the best solution for each challenge.",
@@ -95,7 +95,7 @@ export const ui = {
     "info.location": "Ubicación",
     "info.locValue": "Barcelona, ES",
     "info.focus": "Enfoque",
-    "info.focusValue": "Excelencia en Ingeniería",
+    "info.focusValue": "Creatividad Digital",
     "phi.title": "Mentalidad Técnica",
     "philosophy.content":
       "Creo en la mejora continua. Me esfuerzo por escribir código eficiente, legible y escalable, buscando siempre la mejor solución para cada reto.",
