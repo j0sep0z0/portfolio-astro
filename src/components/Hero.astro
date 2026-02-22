@@ -13,7 +13,7 @@ const name = "Jose"
       <span class="text-lavender">{name}</span>!
     </h1>
 
-    <p class="mx-auto max-w-xl text-l font-light tracking-widest text-gray-300 uppercase md:text-xl">
+    <p class="text-l mx-auto max-w-xl font-light tracking-widest text-gray-300 uppercase md:text-xl">
       {t("hero.description")}
     </p>
 
@@ -33,24 +33,42 @@ const name = "Jose"
     </div>
   </div>
 
-  <div class="border-carbon-light mt-24 grid w-full max-w-4xl grid-cols-1 gap-8 border-t pt-12 md:grid-cols-3">
-    <a href="#projects" class="group space-y-2 text-center transition-opacity hover:opacity-80">
+  <div class="border-carbon-light mt-24 grid w-full max-w-4xl grid-cols-1 border-t pt-12 md:grid-cols-3 md:gap-8">
+    <a
+      href="#projects"
+      class="group border-carbon-light flex items-center justify-between border-b py-4 transition-opacity hover:opacity-80 md:flex-col md:items-center md:justify-center md:space-y-2 md:border-b-0 md:py-0"
+    >
       <h3 class="text-lavender text-xs font-black tracking-[0.2em] uppercase transition-colors group-hover:text-white">
         {t("info.projects")}
       </h3>
-      <p class="text-sm text-gray-500 transition-colors group-hover:text-gray-300">{t("info.projectsValue")}</p>
+      <p class="hidden text-sm text-gray-500 transition-colors group-hover:text-gray-300 md:block">
+        {t("info.projectsValue")}
+      </p>
+      <span class="text-lavender text-xs transition-colors group-hover:text-white md:hidden">→</span>
     </a>
-    <a href="#tech-ecosystem" class="group space-y-2 text-center transition-opacity hover:opacity-80">
+    <a
+      href="#tech-ecosystem"
+      class="group border-carbon-light flex items-center justify-between border-b py-4 transition-opacity hover:opacity-80 md:flex-col md:items-center md:justify-center md:space-y-2 md:border-b-0 md:py-0"
+    >
       <h3 class="text-lavender text-xs font-black tracking-[0.2em] uppercase transition-colors group-hover:text-white">
         {t("info.stack")}
       </h3>
-      <p class="text-sm text-gray-500 transition-colors group-hover:text-gray-300">{t("info.stackValue")}</p>
+      <p class="hidden text-sm text-gray-500 transition-colors group-hover:text-gray-300 md:block">
+        {t("info.stackValue")}
+      </p>
+      <span class="text-lavender text-xs transition-colors group-hover:text-white md:hidden">→</span>
     </a>
-    <a href="#philosophy" class="group space-y-2 text-center transition-opacity hover:opacity-80">
+    <a
+      href="#philosophy"
+      class="group flex items-center justify-between py-4 transition-opacity hover:opacity-80 md:flex-col md:items-center md:justify-center md:space-y-2 md:py-0"
+    >
       <h3 class="text-lavender text-xs font-black tracking-[0.2em] uppercase transition-colors group-hover:text-white">
         {t("info.philosophy")}
       </h3>
-      <p class="text-sm text-gray-500 transition-colors group-hover:text-gray-300">{t("info.philosophyValue")}</p>
+      <p class="hidden text-sm text-gray-500 transition-colors group-hover:text-gray-300 md:block">
+        {t("info.philosophyValue")}
+      </p>
+      <span class="text-lavender text-xs transition-colors group-hover:text-white md:hidden">→</span>
     </a>
   </div>
 </section>

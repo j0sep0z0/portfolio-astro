@@ -50,7 +50,7 @@ const experiences = [
                 "border-carbon-deep absolute left-5 h-2 w-2 -translate-x-1/2 rounded-full border ring-4 transition-all duration-500 md:left-1/2 md:-ml-px",
                 exp.current
                   ? "bg-lavender ring-lavender/20"
-                  : "bg-carbon-light group-hover:bg-lavender group-hover:ring-lavender/10 ring-transparent",
+                  : "bg-lavender ring-lavender/10 md:bg-carbon-light md:group-hover:bg-lavender md:group-hover:ring-lavender/10 md:ring-transparent",
               ].join(" ")}
             />
 
@@ -60,8 +60,8 @@ const experiences = [
                 index === 0
                   ? "opacity-100"
                   : index === 1
-                    ? "opacity-80 group-hover:opacity-100"
-                    : "opacity-60 group-hover:opacity-100",
+                    ? "opacity-100 md:opacity-80 md:group-hover:opacity-100"
+                    : "opacity-100 md:opacity-60 md:group-hover:opacity-100",
               ].join(" ")}
             >
               <div class="mb-1 flex items-center justify-between space-x-2">
