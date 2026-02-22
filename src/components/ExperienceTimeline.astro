@@ -1,0 +1,79 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+const experiences = [
+  {
+    date: t("journey.rkive.date"),
+    title: t("journey.rkive.role"),
+    company: t("journey.rkive.company"),
+    description: t("journey.rkive.desc"),
+    current: true,
+  },
+  {
+    date: t("journey.reffindr.date"),
+    title: t("journey.reffindr.role"),
+    company: t("journey.reffindr.company"),
+    description: t("journey.reffindr.desc"),
+    current: false,
+  },
+  {
+    date: t("journey.gopass.date"),
+    title: t("journey.gopass.role"),
+    company: t("journey.gopass.company"),
+    description: t("journey.gopass.desc"),
+    current: false,
+  },
+]
+---
+
+<section id="experience" class="flex min-h-screen w-full snap-start flex-col justify-center px-8 py-32 md:px-24">
+  <div class="mx-auto w-full max-w-screen-2xl">
+    <div class="mb-24 space-y-4">
+      <p class="text-3xl font-black uppercase md:text-5xl">
+        {t("journey.title")}
+        <span class="text-lavender">{t("journey.accent")}</span>
+      </p>
+    </div>
+
+    <div
+      class="before:from-lavender before:via-carbon-light before:to-carbon-light relative space-y-12 before:absolute before:top-0 before:bottom-0 before:left-5 before:w-0.5 before:-translate-x-1/2 before:bg-linear-to-b md:before:left-1/2"
+    >
+      {
+        experiences.map((exp, index) => (
+          <div class="group relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse">
+            {/* Dot */}
+            <div
+              class={[
+                "border-carbon-deep absolute left-5 h-2 w-2 -translate-x-1/2 rounded-full border ring-4 transition-all duration-500 md:left-1/2 md:-ml-px",
+                exp.current
+                  ? "bg-lavender ring-lavender/20"
+                  : "bg-lavender ring-lavender/10 md:bg-carbon-light md:group-hover:bg-lavender md:group-hover:ring-lavender/10 md:ring-transparent",
+              ].join(" ")}
+            />
+
+            <div
+              class={[
+                "w-[calc(100%-4rem)] p-6 transition-all duration-500 md:w-[calc(50%-2.5rem)]",
+                index === 0
+                  ? "opacity-100"
+                  : index === 1
+                    ? "opacity-100 md:opacity-80 md:group-hover:opacity-100"
+                    : "opacity-100 md:opacity-60 md:group-hover:opacity-100",
+              ].join(" ")}
+            >
+              <div class="mb-1 flex items-center justify-between space-x-2">
+                <time class="text-lavender text-[10px] font-black tracking-widest uppercase">{exp.date}</time>
+              </div>
+              <h3 class="text-lg font-black tracking-tight text-white uppercase">{exp.title}</h3>
+              <p class="mb-4 text-xs font-bold tracking-widest text-gray-500 uppercase">{exp.company}</p>
+              <p class="text-sm leading-relaxed font-light text-gray-400">{exp.description}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,74 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const name = "Jose"
+---
+
+<section class="flex min-h-screen snap-start flex-col items-center justify-center p-8 text-center md:p-24">
+  <div class="space-y-6">
+    <h1 class="text-5xl font-black tracking-tighter uppercase md:text-7xl">
+      {t("hero.greeting")}
+      <span class="text-lavender">{name}</span>!
+    </h1>
+
+    <p class="text-l mx-auto max-w-xl font-light tracking-widest text-gray-300 uppercase md:text-xl">
+      {t("hero.description")}
+    </p>
+
+    <div class="flex flex-col items-center justify-center gap-4 pt-8 sm:flex-row">
+      <a
+        href="#experience"
+        class="border-lavender text-lavender hover:bg-lavender hover:text-carbon-deep w-full border bg-transparent px-8 py-3 text-sm font-bold tracking-widest uppercase transition-all duration-300 sm:w-auto"
+      >
+        {t("hero.viewExperience")}
+      </a>
+      <a
+        href="#contact"
+        class="border-carbon-light w-full border px-8 py-3 text-sm font-bold tracking-widest text-gray-400 uppercase transition-all duration-300 hover:border-white hover:text-white sm:w-auto"
+      >
+        {t("hero.contactMe")}
+      </a>
+    </div>
+  </div>
+
+  <div class="border-carbon-light mt-24 grid w-full max-w-4xl grid-cols-1 border-t pt-12 md:grid-cols-3 md:gap-8">
+    <a
+      href="#projects"
+      class="group border-carbon-light flex items-center justify-between border-b py-4 transition-opacity hover:opacity-80 md:flex-col md:items-center md:justify-center md:space-y-2 md:border-b-0 md:py-0"
+    >
+      <h3 class="text-lavender text-xs font-black tracking-[0.2em] uppercase transition-colors group-hover:text-white">
+        {t("info.projects")}
+      </h3>
+      <p class="hidden text-sm text-gray-500 transition-colors group-hover:text-gray-300 md:block">
+        {t("info.projectsValue")}
+      </p>
+      <span class="text-lavender text-xs transition-colors group-hover:text-white md:hidden">→</span>
+    </a>
+    <a
+      href="#tech-ecosystem"
+      class="group border-carbon-light flex items-center justify-between border-b py-4 transition-opacity hover:opacity-80 md:flex-col md:items-center md:justify-center md:space-y-2 md:border-b-0 md:py-0"
+    >
+      <h3 class="text-lavender text-xs font-black tracking-[0.2em] uppercase transition-colors group-hover:text-white">
+        {t("info.stack")}
+      </h3>
+      <p class="hidden text-sm text-gray-500 transition-colors group-hover:text-gray-300 md:block">
+        {t("info.stackValue")}
+      </p>
+      <span class="text-lavender text-xs transition-colors group-hover:text-white md:hidden">→</span>
+    </a>
+    <a
+      href="#philosophy"
+      class="group flex items-center justify-between py-4 transition-opacity hover:opacity-80 md:flex-col md:items-center md:justify-center md:space-y-2 md:py-0"
+    >
+      <h3 class="text-lavender text-xs font-black tracking-[0.2em] uppercase transition-colors group-hover:text-white">
+        {t("info.philosophy")}
+      </h3>
+      <p class="hidden text-sm text-gray-500 transition-colors group-hover:text-gray-300 md:block">
+        {t("info.philosophyValue")}
+      </p>
+      <span class="text-lavender text-xs transition-colors group-hover:text-white md:hidden">→</span>
+    </a>
+  </div>
+</section>

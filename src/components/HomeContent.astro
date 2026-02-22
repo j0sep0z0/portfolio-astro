@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro"
+import LangSwitcher from "./LangSwitcher.astro"
+import Hero from "./Hero.astro"
+import TechnicalPhilosophy from "./TechnicalPhilosophy.astro"
+import ProjectsGrid from "./ProjectsGrid.astro"
+import TechEcosystem from "./TechEcosystem.astro"
+import ExperienceTimeline from "./ExperienceTimeline.astro"
+import ContactFooter from "./ContactFooter.astro"
+import { getLangFromUrl, useTranslations } from "../i18n/utils"
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<Layout title={t("nav.title")}>
+  <LangSwitcher />
+
+  <main class="h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth">
+    <Hero />
+    <TechnicalPhilosophy />
+    <ExperienceTimeline />
+    <ProjectsGrid />
+    <TechEcosystem />
+    <ContactFooter />
+  </main>
+</Layout>
