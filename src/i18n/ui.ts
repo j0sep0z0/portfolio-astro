@@ -24,7 +24,7 @@ export const ui = {
     "info.locValue": "Barcelona, Spain",
     "phi.title": "Technical Mindset",
     "philosophy.content":
-      "I believe in continuous improvement. I strive to write code that is efficient, readable, and scalable, always looking for the best solution for each challenge.",
+      "I believe in continuous improvement and in writing clear, efficient and scalable code, always aiming for the simplest and most robust solution to every problem.",
     "philosophy.subtext": "Building robust, maintainable applications. Prioritizing performance and modular design.",
 
     "projects.title": "Featured",
@@ -42,7 +42,7 @@ export const ui = {
     "journey.rkive.role": "Full Stack Developer",
     "journey.rkive.company": "Rkive AI",
     "journey.rkive.desc":
-      "Developing and maintaining Rkive AI's mobile and web applications. Designing robust architectures and integrating AI-driven engines.",
+      "AI-powered platform for automated content creation. Intelligent workflows for multimedia editing and generating social-ready content.",
     "journey.rkive.date": "May 2025 — Present",
     "journey.reffindr.role": "Full Stack Developer",
     "journey.reffindr.company": "Igrowker (Reffindr)",
@@ -102,7 +102,7 @@ export const ui = {
     "info.locValue": "Barcelona, España",
     "phi.title": "Mentalidad Técnica",
     "philosophy.content":
-      "Creo en la mejora continua. Me esfuerzo por escribir código eficiente, legible y escalable, buscando siempre la mejor solución para cada reto.",
+      "Creo en la mejora continua y en escribir código claro, eficiente y escalable, buscando siempre la solución más simple y robusta para cada problema.",
     "philosophy.subtext":
       "Construyendo aplicaciones robustas y mantenibles. Priorizando el rendimiento y el diseño modular.",
 
@@ -121,7 +121,7 @@ export const ui = {
     "journey.rkive.role": "Full Stack Developer",
     "journey.rkive.company": "Rkive AI",
     "journey.rkive.desc":
-      "Desarrollando y manteniendo aplicaciones web y móviles para Rkive AI. Diseñando arquitecturas robustas e integrando motores de IA.",
+      "Plataforma de creación de contenido automatizado mediante IA. Orquestación de flujos inteligentes para edición multimedia y generación de contenido listo para redes sociales.",
     "journey.rkive.date": "May 2025 — Presente",
     "journey.reffindr.role": "Full Stack Developer",
     "journey.reffindr.company": "Igrowker (Reffindr)",
