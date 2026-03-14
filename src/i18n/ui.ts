@@ -36,7 +36,7 @@ export const ui = {
 
     "tech.title": "Technical",
     "tech.accent": "Stack",
-    "tech.frontend": "Frontend & Mobile",
+    "tech.frontend": "Frontend",
     "tech.logic": "State & Logic",
     "tech.backend": "Backend Core",
     "tech.devops": "Cloud, AI & Tools",
@@ -121,7 +121,7 @@ export const ui = {
 
     "tech.title": "Stack",
     "tech.accent": "Técnico",
-    "tech.frontend": "Frontend y Mobile",
+    "tech.frontend": "Frontend",
     "tech.logic": "Estado y Lógica",
     "tech.backend": "Núcleo Backend",
     "tech.devops": "Cloud, IA y Herramientas",
